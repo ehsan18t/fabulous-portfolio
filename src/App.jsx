@@ -1,12 +1,15 @@
+import Home from './pages/Home'
+import About from './pages/About'
+import { Route, Routes, BrowserRouter } from 'react-router-dom'
+
 function App() {
   return (
-    <div className="flex flex-col h-screen justify-center">
-      <div className="flex justify-center">
-        <div className="text-3xl font-bold underline">
-          TailwindCSS Integration Test
-        </div>
-      </div>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home title="Home Page" />} />
+        <Route path="/about" element={<About title="ABout Page" />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
