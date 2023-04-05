@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom Classes */
+body {
+    @apply h-screen bg-gradient-to-t from-blue-500 via-purple-500 to-pink-500 bg-fixed bg-cover;
+}
+
+/* NAV */
+nav {
+    @apply flex items-center justify-around p-4;
+    @apply bg-zinc-700/70 h-24 w-96 rounded-full;
+    @apply shadow-2xl fixed top-3/4;
+}
+
+.nav {
+    @apply flex items-center justify-center ;
+}
+
+.nav-item {
+    @apply flex items-center justify-center;
+}
+
+.item-icon {
+    @apply text-white cursor-pointer hover:text-gray-300;
+}
