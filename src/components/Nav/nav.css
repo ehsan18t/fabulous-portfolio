@@ -1,31 +1,29 @@
 /* NAV */
 .trans-ease {
-    @apply transition ease-in-out duration-300;
+  @apply transition ease-in-out duration-300;
 }
 
 nav {
-    @apply bg-black/30 w-max block px-3 py-3 z-10 fixed left-1/2 transform -translate-x-2/4 bottom-8;
     @apply flex space-x-4 rounded-[3rem] backdrop-blur-lg shadow-2xl trans-ease;
-
+  @apply bg-black/30 w-max block px-3 py-3 z-10 fixed left-1/2 transform -translate-x-2/4 bottom-8;
 }
 
 .nav-item {
-    @apply flex justify-center bg-transparent p-2 rounded-full text-white trans-ease;
+  @apply flex justify-center bg-transparent p-2 rounded-full text-white trans-ease;
 }
 
 .nav-item:hover {
-    @apply bg-black/30 trans-ease;
+  @apply bg-black/30 trans-ease;
 }
 
 .nav-item.active:hover {
-    @apply bg-bg-inverted;
+  @apply bg-bg-inverted;
 }
 
 .nav-item.active {
-    @apply bg-bg-inverted trans-ease;
+  @apply bg-bg-inverted trans-ease;
 }
 
 .item-icon {
-    @apply text-white cursor-pointer trans-ease;
+  @apply text-white cursor-pointer trans-ease;
 }
-
