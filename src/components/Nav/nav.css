@@ -1,7 +1,7 @@
 /* NAV */
 @keyframes slideInFromBottom {
   0% {
-    transform: translateY(100%);
+    transform: translateY(100%) translateX(-50%);
     opacity: 0;
   }
 
