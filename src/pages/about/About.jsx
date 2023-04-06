@@ -1,4 +1,4 @@
-import useDocumentTitle from '../assets/js/useDocumentTitle'
+import useDocumentTitle from '../../assets/js/useDocumentTitle'
 
 const About = (props) => {
   useDocumentTitle(props.title)
