@@ -14,7 +14,11 @@ nav {
 }
 
 .nav-item:hover {
-    @apply bg-bg-inverted trans-ease;
+    @apply bg-black/30 trans-ease;
+}
+
+.nav-item.active:hover {
+    @apply bg-bg-inverted;
 }
 
 .nav-item.active {
