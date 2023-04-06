@@ -7,6 +7,11 @@
 
 /* Custom Classes */
 
+:root {
+    --color-bg: #1f1f35;
+    --color-bg-inverted: #2c2c6c;
+    --color-primary: #4db5ff;
+    --color-primary-variant: rgba(77, 181, 255, 0.5);
 }
 
 body {

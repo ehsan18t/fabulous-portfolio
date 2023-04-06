@@ -13,6 +13,16 @@ module.exports = {
         xlg: '1440px',
         // => @media (min-width: 1440px) { ... }
       },
+      colors: {
+        bg: {
+          main: 'var(--color-bg)',
+          inverted: 'var(--color-bg-inverted)',
+        },
+        primary: {
+          main: 'var(--color-primary)',
+          inverted: 'var(--color-primary-inverted)',
+        },
+      },
     },
   },
   plugins: [],
