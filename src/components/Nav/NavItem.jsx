@@ -4,7 +4,7 @@ function NavItem(props) {
   return (
     <>
       <Link to={props.to} className="nav-item">
-        <span class="material-icons item-icon">{props.icon}</span>
+        <span className="material-icons item-icon">{props.icon}</span>
       </Link>
     </>
   )
