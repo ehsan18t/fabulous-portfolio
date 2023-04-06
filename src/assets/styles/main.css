@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Remove Custom Designs */
+
+* {
+    @apply m-0 p-0 border-0 outline-none box-border list-none no-underline;
+}
+
+/* Custom Classes */
+
+:root {
+    --color-bg: #1f1f35;
+    --color-bg-inverted: #2c2c6c;
+    --color-primary: #4db5ff;
+    --color-primary-variant: rgba(77, 181, 255, 0.5);
+}
+
+body {
+    @apply h-screen bg-gradient-to-t from-blue-500 via-purple-500 to-pink-500 bg-fixed bg-cover;
+}

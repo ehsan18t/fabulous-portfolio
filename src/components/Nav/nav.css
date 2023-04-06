@@ -1,0 +1,45 @@
+/* NAV */
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%) translateX(-50%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0) translateX(-50%);
+    opacity: 1;
+  }
+}
+
+.anim {
+  animation: 1s ease-out 0s 1 slideInFromBottom;
+}
+
+.trans-ease {
+  @apply transition ease-in-out duration-300;
+}
+
+nav {
+  @apply bg-black/30 w-max block px-3 py-3 z-10 fixed left-1/2 transform -translate-x-2/4 bottom-8;
+  @apply flex space-x-4 rounded-[3rem] backdrop-blur-lg shadow-2xl anim trans-ease;
+}
+
+.nav-item {
+  @apply flex justify-center bg-transparent p-2 rounded-full text-white trans-ease;
+}
+
+.nav-item:hover {
+  @apply bg-black/30 trans-ease;
+}
+
+.nav-item.active:hover {
+  @apply bg-bg-inverted;
+}
+
+.nav-item.active {
+  @apply bg-bg-inverted trans-ease;
+}
+
+.item-icon {
+  @apply text-white cursor-pointer trans-ease;
+}
