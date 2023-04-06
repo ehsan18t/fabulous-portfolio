@@ -10,7 +10,11 @@ nav {
 }
 
 .nav-item:hover {
-    @apply bg-black/20 transition duration-300;
+    @apply bg-bg-inverted transition duration-300;
+}
+
+.nav-item.active {
+    @apply bg-bg-inverted transition duration-300;
 }
 
 .item-icon {

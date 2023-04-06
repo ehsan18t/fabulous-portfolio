@@ -1,11 +1,16 @@
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 function NavItem(props) {
   return (
     <>
-      <Link to={props.to} className="nav-item">
+      <NavLink
+        to={props.to}
+        className={({ isActive }) =>
+          isActive ? 'nav-item  active' : 'nav-item'
+        }
+      >
         <span className="material-icons item-icon">{props.icon}</span>
-      </Link>
+      </NavLink>
     </>
   )
 }
