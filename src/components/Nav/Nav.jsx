@@ -1,4 +1,5 @@
 import NavItem from './NavItem'
+import './nav.css'
 
 function Nav() {
   return (
